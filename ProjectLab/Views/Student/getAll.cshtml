@@ -1,0 +1,25 @@
+﻿<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">SSN</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Image</th>
+            <th scope="col">Address</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <th>@student.SSN</th>
+                <td>@student.Name</td>
+                <td>@student.Age</td>
+                <td><img src="@student.Image" alt="@student.Image" /></td>
+                <td>@student.Address</td>
+                <td>@student.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
