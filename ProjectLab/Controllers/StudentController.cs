@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProjectLab.Data;
+using ProjectLab.Models;
 
 namespace ProjectLab.Controllers
 {
@@ -22,6 +23,18 @@ namespace ProjectLab.Controllers
                 return NotFound();
             }
             return View(student);
+        }
+
+        public IActionResult AddStudent()
+        {
+            return View();
+        }
+
+        public IActionResult AddNewStudent(Student student)
+        {
+            _context.Students.Add(student);
+            _context.SaveChanges();
+            return RedirectToAction("getAll");
         }
     }
 }

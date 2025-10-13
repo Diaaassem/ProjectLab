@@ -1,0 +1,43 @@
+﻿<style>
+    .short-input {
+        max-width: 360px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+</style>
+
+<h3 class="form-container">Add New Department</h3>
+
+<div class="form-container">
+    <form action="/Department/AddNewDept">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="text" name="Name" class="form-control short-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Manager</label>
+            <input type="text" name="Manager" class="form-control short-input" id="exampleInputPassword1">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputLocation1">Location</label>
+            <input type="text" name="Location" class="form-control short-input" id="exampleInputLocation1">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputBranch1">Branch</label>
+            <select name="Branch" class="form-control short-input" id="exampleInputBranch1">
+                <option value="0">Fym</option>
+                <option value="1">Cairo</option>
+                <option value="2">Alex</option>
+            </select>
+        </div>
+        <br />
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
