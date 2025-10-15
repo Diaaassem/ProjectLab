@@ -1,0 +1,44 @@
+﻿@model List<Instructor>
+
+<a asp-controller="Instructor" asp-action="AddInstructor" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 10px;">
+    <i class="bi bi-plus-lg"></i> Add New Instructor
+</a>
+<br />
+<br />
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Image</th>
+            <th scope="col">Hire Date</th>
+            <th scope="col">Address</th>
+            <th scope="col">Department</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var instructor in Model)
+        {
+            <tr>
+                <th>@instructor.Id</th>
+                <td>@instructor.Name</td>
+                <td>@instructor.Age</td>
+                <td>@instructor.Salary</td>
+                <td><img src="@instructor.Image" alt="@instructor.Name" /></td>
+                <td>@instructor.HireDate</td>
+                <td>@instructor.Address</td>
+                <td>@instructor.Department?.Name</td>
+                <td>
+                    <a asp-controller="Instructor" asp-action="Edit" asp-route-id="@instructor.Id" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-controller="Instructor" asp-action="Delete" asp-route-id="@instructor.Id" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

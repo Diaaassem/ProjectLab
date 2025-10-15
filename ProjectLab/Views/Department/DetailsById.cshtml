@@ -1,10 +1,13 @@
 ﻿@model Department
 
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+<div class="card" style="max-width:540px;margin:20px auto;">
     <div class="card-body">
-        <h5 class="card-title">Department Details</h5>
-        <p class="card-text">@Model</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h3 class="card-title">Department: @Model.Name</h3>
+        <p class="card-text"><strong>Manager:</strong> @Model.Manager</p>
+        <p class="card-text"><strong>Location:</strong> @Model.Location</p>
+        <p class="card-text"><strong>Branch:</strong> @Model.Branch</p>
+        <hr />
+        <p class="card-text"><strong>Number of Students:</strong> @(Model.Students?.Count() ?? 0)</p>
+        <p class="card-text"><strong>Number of Instructors:</strong> @(Model.Instructors?.Count() ?? 0)</p>
     </div>
 </div>

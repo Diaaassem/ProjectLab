@@ -10,6 +10,10 @@
         justify-content: center;
         margin-top: 20px;
     }
+
+    .form-group {
+        margin-bottom: 10px; /* Add spacing between form elements */
+    }
 </style>
 
 <h3 class="form-container">Add New Student</h3>
@@ -36,9 +40,15 @@
             <label for="exampleInputEmail1">Email</label>
             <input type="text" name="Email" class="form-control short-input" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
-        <div>
-            <label for="exampleInputDepartment1">Department ID</label>
-            <input type="number" name="DeptId" class="form-control short-input" id="exampleInputDepartment1">
+        <div class="form-group">
+            <label for="deptSelect">Department</label>
+            <select name="DeptId" class="form-control short-input" id="deptSelect">
+                <option value="">Select Department</option>
+                @foreach (var dept in ViewBag.Departments)
+                {
+                    <option value="@dept.DeptId">@dept.Name</option>
+                }
+            </select>
         </div>
         <br />
 

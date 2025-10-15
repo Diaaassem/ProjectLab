@@ -29,6 +29,10 @@
                 <td><img src="@student.Image" alt="@student.Image" /></td>
                 <td>@student.Address</td>
                 <td>@student.Email</td>
+                <td>
+                    <a href="/Student/Edit/@student.SSN" class="btn btn-warning btn-sm">Edit</a>
+                    <a href="/Student/Delete/@student.SSN" class="btn btn-danger btn-sm">Delete</a>
+                </td>
             </tr>
         }
     </tbody>

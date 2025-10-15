@@ -1,0 +1,75 @@
+﻿@model Instructor
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Edit Instructor";
+    SelectList departments = new SelectList(ViewBag.Departments, "DeptId", "Name");
+}
+
+<style>
+    .short-input {
+        max-width: 360px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .form-group{ margin-bottom:10px; }
+</style>
+
+<h3 class="form-container">Edit Instructor</h3>
+
+<div class="form-container">
+    <div class="short-input">
+        <form asp-action="Edit" asp-controller="Instructor" method="post">
+
+            <input asp-for="Id" type="hidden" />
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Age" class="control-label"></label>
+                <input asp-for="Age" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Salary" class="control-label"></label>
+                <input asp-for="Salary" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Image" class="control-label"></label>
+                <input asp-for="Image" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="HireDate" class="control-label"></label>
+                <input asp-for="HireDate" class="form-control" type="date" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DeptId" class="control-label">Department</label>
+                <select asp-for="DeptId" class="form-control" asp-items="departments">
+                    <option value="">-- Select Department --</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </form>
+    </div>
+</div>
+

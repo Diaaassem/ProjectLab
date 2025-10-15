@@ -1,4 +1,6 @@
-﻿namespace ProjectLab.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ProjectLab.Models
 {
     public class Student
     {
@@ -8,6 +10,7 @@
         public string Image { get; set; }
         public string Address { get; set; }
         public string Email { get; set; }
+        [Display(Name = "Department")]
         public int? DeptId { get; set; }
         public Department Department { get; set; }
         public ICollection<StudentCourse> Registrations { get; set; } = new List<StudentCourse>();

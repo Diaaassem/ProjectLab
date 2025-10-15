@@ -24,6 +24,11 @@
                 <td>@dept.Manager</td>
                 <td>@dept.Location</td>
                 <td>@dept.Branch</td>
+                <td>
+                    <a asp-controller="Department" asp-action="Edit" asp-route-id="@dept.DeptId" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-controller="Department" asp-action="Delete" asp-route-id="@dept.DeptId" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+
             </tr>
         }
     </tbody>
