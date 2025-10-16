@@ -1,50 +1,15 @@
-﻿@model Instructor
+﻿@* @model Instructor *@
 
-@{
-    SelectList Departments = new SelectList(ViewBag.Departments, "DeptId", "Name");
-}
+<h3 class="form-container">Add New Instructor</h3>
 
-<h2>Add New Instructor</h2>
-
-<form asp-action="AddNewInstructor" asp-controller="Instructor" method="post">
-    <div class="form-group">
-        <label asp-for="Name" class="control-label"></label>
-        <input asp-for="Name" class="form-control" />
+<div class="form-container">
+    <div class="short-input">
+        <form asp-action="AddNewInstructor" asp-controller="Instructor" method="post">
+            <partial name="_InstructorFormPartial" model="Model" />
+            <br />
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
     </div>
-
-    <div class="form-group">
-        <label asp-for="Age" class="control-label"></label>
-        <input asp-for="Age" class="form-control" />
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Salary" class="control-label"></label>
-        <input asp-for="Salary" class="form-control" />
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Image" class="control-label"></label>
-        <input asp-for="Image" class="form-control" />
-    </div>
-
-    <div class="form-group">
-        <label asp-for="HireDate" class="control-label"></label>
-        <input asp-for="HireDate" class="form-control"/>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Address" class="control-label"></label>
-        <input asp-for="Address" class="form-control" />
-    </div>
-
-    <div class="form-group">
-        <label asp-for="DeptId" class="control-label">Department</label>
-        <select asp-for="DeptId" class="form-control" asp-items="Departments">
-            <option value="">-- Select Department --</option>
-        </select>
-    </div>
-    <br />
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-</form>
+</div>

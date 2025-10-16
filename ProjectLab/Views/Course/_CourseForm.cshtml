@@ -1,0 +1,46 @@
+@model Course
+
+<style>
+    .short-input {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .form-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+</style>
+
+@{
+    ViewData["SubmitButtonText"] = "Submit";
+}
+
+
+<div class="short-input">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Course Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Topic" class="form-label">Course Topic</label>
+        <input asp-for="Topic" class="form-control" />
+        <span asp-validation-for="Topic" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Degree" class="form-label">Course Degree</label>
+        <input asp-for="Degree" class="form-control" />
+        <span asp-validation-for="Degree" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="MinDegree" class="form-label">Course Min Degree</label>
+        <input asp-for="MinDegree" class="form-control" />
+        <span asp-validation-for="MinDegree" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">@ViewData["SubmitButtonText"]</button>
+</div>

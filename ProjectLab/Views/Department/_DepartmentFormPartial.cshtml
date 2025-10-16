@@ -1,0 +1,53 @@
+@model Department
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<style>
+    .short-input {
+        max-width: 420px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="form-group">
+    <label asp-for="Name" class="control-label"></label>
+    <input asp-for="Name" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label asp-for="Manager" class="control-label"></label>
+    <input asp-for="Manager" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label asp-for="Location" class="control-label"></label>
+    <input asp-for="Location" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label asp-for="Branch" class="control-label"></label>
+    <select asp-for="Branch" class="form-control">
+        <option value="">-- Select Branch --</option>
+        @foreach (var b in Enum.GetValues(typeof(Branch)).Cast<Branch>())
+        {
+            @if (Model != null && Model.Branch == b)
+            {
+                <option value="@b" selected="selected">@b</option>
+            }
+            else
+            {
+                <option value="@b">@b</option>
+            }
+        }
+    </select>
+</div>

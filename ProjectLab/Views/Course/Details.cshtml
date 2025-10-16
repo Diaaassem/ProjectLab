@@ -1,0 +1,14 @@
+﻿@model Course
+
+<div class="card" style="max-width:540px;margin:20px auto;">
+    <div class="card-body">
+        <h3 class="card-title">Course: @Model.Name</h3>
+        <p class="card-text"><strong>Topic:</strong> @Model.Topic</p>
+        <p class="card-text"><strong>Degree:</strong> @Model.Degree</p>
+        <p class="card-text"><strong>Min Degree:</strong> @Model.MinDegree</p>
+        <hr />
+        <p class="card-text"><strong>Registered Students:</strong> @(Model.Registrations?.Count() ?? 0)</p>
+        <p class="card-text"><strong>Instructors:</strong> @(Model.TeachCourses?.Count() ?? 0)</p>
+
+    </div>
+</div>

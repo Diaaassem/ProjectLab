@@ -1,8 +1,49 @@
-﻿<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+﻿@using ProjectLab.Models
+@model Student
+
+<div class="card" style="max-width:800px;margin:20px auto;">
     <div class="card-body">
-        <h5 class="card-title">Student Details</h5>
-        <p class="card-text">@Model</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        @if (!string.IsNullOrEmpty(Model.Image))
+        {
+            <div style="text-align: center; margin-bottom: 15px;">
+                <img src="~/images/@Model.Image" alt="@Model.Name" style="max-width: 150px; border-radius: 10px;" />
+            </div>
+        }
+        
+        <h3 class="card-title">Student: @Model.Name</h3>
+        <p class="card-text"><strong>SSN:</strong> @Model.SSN</p>
+        <p class="card-text"><strong>Age:</strong> @Model.Age</p>
+        <p class="card-text"><strong>Email:</strong> @Model.Email</p>
+        <p class="card-text"><strong>Address:</strong> @Model.Address</p>
+        <p class="card-text"><strong>Department:</strong> @(Model.Department?.Name ?? "Not Assigned")</p>
+        <hr />
+        <p class="card-text"><strong>Registered Courses:</strong> @(Model.Registrations?.Count() ?? 0)</p>
+        
+        @if (Model.Registrations != null && Model.Registrations.Any())
+        {
+            <table class="table table-sm mt-3">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Topic</th>
+                        <th>Degree</th>
+                        <th>Min Degree</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var registration in Model.Registrations)
+                    {
+                        <tr>
+                            <td>@registration.Course?.Name</td>
+                            <td>@registration.Course?.Topic</td>
+                            <td>@registration.Course?.Degree</td>
+                            <td>@registration.Course?.MinDegree</td>
+                            <td>@(registration.Grade ?? "Not Graded")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
     </div>
 </div>

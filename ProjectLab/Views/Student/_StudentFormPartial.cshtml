@@ -1,0 +1,57 @@
+@model Student
+
+<style>
+    .short-input {
+        max-width: 360px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="form-group">
+    <label for="inputName">Name</label>
+    <input type="text" name="Name" class="form-control short-input" id="inputName" value="@Model?.Name" aria-describedby="nameHelp">
+</div>
+<div class="form-group">
+    <label for="inputAge">Age</label>
+    <input type="number" name="Age" class="form-control short-input" id="inputAge" value="@Model?.Age">
+</div>
+<div class="form-group">
+    <label for="inputImage">Image</label>
+    <input type="text" name="Image" class="form-control short-input" id="inputImage" value="@Model?.Image">
+</div>
+<div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" name="Address" class="form-control short-input" id="inputAddress" value="@Model?.Address">
+</div>
+<div class="form-group">
+    <label for="inputEmail">Email</label>
+    <input type="text" name="Email" class="form-control short-input" id="inputEmail" value="@Model?.Email" aria-describedby="emailHelp">
+</div>
+<div class="form-group">
+    <label for="deptSelect">Department</label>
+    <select name="DeptId" class="form-control short-input" id="deptSelect">
+        <option value="">Select Department</option>
+        @foreach (var dept in ViewBag.Departments)
+        {
+            @if (Model != null && dept.DeptId == Model.DeptId)
+            {
+                <option value="@dept.DeptId" selected="selected">@dept.Name</option>
+            }
+            else
+            {
+                <option value="@dept.DeptId">@dept.Name</option>
+            }
+        }
+    </select>
+</div>

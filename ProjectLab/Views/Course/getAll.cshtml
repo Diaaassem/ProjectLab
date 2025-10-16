@@ -1,0 +1,41 @@
+﻿@model List<Course>
+
+<a asp-controller="Course" asp-action="Add" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 10px;">
+    <i class="bi bi-plus-lg"></i> Add New Course
+</a>
+<br />
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Degree</th>
+            <th scope="col">MinDegree</th>
+            <th scope="col">Students</th>
+            <th scope="col">Instructors</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var course in Model)
+        {
+            <tr>
+                <td>@course.Id</td>
+                <td>@course.Name</td>
+                <td>@course.Topic</td>
+                <td>@course.Degree</td>
+                <td>@course.MinDegree</td>
+                <td>@course.Registrations?.Count()</td>
+                <td>@course.TeachCourses?.Count()</td>
+                <td>
+                    <a asp-controller="Course" asp-action="Edit" asp-route-id="@course.Id" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-controller="Course" asp-action="Delete" asp-route-id="@course.Id" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

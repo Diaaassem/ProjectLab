@@ -1,0 +1,51 @@
+﻿@using ProjectLab.Models.ViewModels
+@model StudentDetailsVM
+
+<div class="card" style="max-width:800px;margin:20px auto;">
+    <div class="card-body">
+        <h3 class="card-title">Student: @Model.StudentName</h3>
+        <p class="card-text"><strong>Department:</strong> @Model.DepartmentName</p>
+        <hr />
+        <p class="card-text"><strong>Registered Courses:</strong> @Model.Courses.Count</p>
+        
+        @if (Model.Courses != null && Model.Courses.Any())
+        {
+            <table class="table table-sm mt-3">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Topic</th>
+                        <th>Degree</th>
+                        <th>Min Degree</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var course in Model.Courses)
+                    {
+                        var gradeValue = 0;
+                        var hasGrade = !string.IsNullOrEmpty(course.Grade) && int.TryParse(course.Grade, out gradeValue);
+                        var backgroundColor = "";
+                        
+                        if (hasGrade)
+                        {
+                            backgroundColor = gradeValue < course.CourseMinDegree ? "background-color: #ffcccc;" : "background-color: #ccffcc;";
+                        }
+                        
+                        <tr>
+                            <td>@course.CourseName</td>
+                            <td>@course.CourseTopic</td>
+                            <td>@course.CourseDegree</td>
+                            <td>@course.CourseMinDegree</td>
+                            <td style="@backgroundColor">@(course.Grade ?? "Not Graded")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p class="text-muted">No courses registered.</p>
+        }
+    </div>
+</div>

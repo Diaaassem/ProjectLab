@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ProjectLab.Data;
 using ProjectLab.Models;
 
@@ -9,13 +10,13 @@ namespace ProjectLab.Controllers
         AppDbContext _context = new AppDbContext();
         public IActionResult getAll()
         {
-            var data = _context.Instructors.ToList();
+            var data = _context.Instructors.Include(i => i.Department).ToList();
             return View(data);
         }
 
         public IActionResult Details(int id)
         {
-            var instructor = _context.Instructors.FirstOrDefault(i => i.Id == id);
+            var instructor = _context.Instructors.Include(i => i.Department).FirstOrDefault(i => i.Id == id);
             if (instructor == null)
             {
                 return NotFound();

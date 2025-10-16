@@ -4,21 +4,6 @@
     ViewData["Title"] = "Edit Department";
 }
 
-<style>
-    .short-input {
-        max-width: 420px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .form-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-    .form-group{ margin-bottom:10px; }
-</style>
-
 <h3 class="form-container">Edit Department</h3>
 
 <div class="form-container">
@@ -28,32 +13,7 @@
 
             <input asp-for="DeptId" type="hidden" />
 
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-            </div>
-
-            <div class="form-group">
-                <label asp-for="Manager" class="control-label"></label>
-                <input asp-for="Manager" class="form-control" />
-            </div>
-
-            <div class="form-group">
-                <label asp-for="Location" class="control-label"></label>
-                <input asp-for="Location" class="form-control" />
-            </div>
-
-            <div class="form-group">
-                <label asp-for="Branch" class="control-label"></label>
-                <select asp-for="Branch" class="form-control">
-                    <option value="">-- Select Branch --</option>
-                    @foreach (var b in Enum.GetValues(typeof(Branch)).Cast<Branch>())
-                    {
-                        var selected = Model.Branch == b ? "selected" : "";
-                        <option value="@b" selected="@selected">@b</option>
-                    }
-                </select>
-            </div>
+            <partial name="_DepartmentFormPartial" model="Model" />
 
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Save</button>
