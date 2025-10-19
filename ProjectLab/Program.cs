@@ -1,3 +1,5 @@
+using ProjectLab.MiddleWares;
+
 namespace ProjectLab
 {
     public class Program
@@ -16,6 +18,10 @@ namespace ProjectLab
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            app.UseExceptionHandlingMiddleware();
+
+            
 
             app.UseStaticFiles();
 

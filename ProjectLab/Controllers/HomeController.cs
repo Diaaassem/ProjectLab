@@ -18,6 +18,7 @@ namespace ProjectLab.Controllers
 
         public IActionResult Index()
         {
+            //throw new Exception("Test exception from HomeController");
             return View();
         }
 
