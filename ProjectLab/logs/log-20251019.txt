@@ -1,0 +1,67 @@
+2025-10-19 23:47:39.004 +03:00 [INF] User profile is available. Using 'C:\Users\Diaa5\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-19 23:47:39.214 +03:00 [INF] Now listening on: http://localhost:5213
+2025-10-19 23:47:39.365 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-19 23:47:39.368 +03:00 [INF] Hosting environment: Development
+2025-10-19 23:47:39.369 +03:00 [INF] Content root path: D:\ITI-DOTNET\cSharp\MVC&API\MvcLab\ProjectLab
+2025-10-19 23:47:39.952 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/ - null null
+2025-10-19 23:47:40.177 +03:00 [INF] Handling request: GET /
+2025-10-19 23:47:40.237 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.HomeController.Index (ProjectLab)'
+2025-10-19 23:47:40.313 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ProjectLab.Controllers.HomeController (ProjectLab).
+2025-10-19 23:47:40.340 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-19 23:47:40.519 +03:00 [INF] Executed ViewResult - view Index executed in 182.1196ms.
+2025-10-19 23:47:40.534 +03:00 [INF] Executed action ProjectLab.Controllers.HomeController.Index (ProjectLab) in 212.1926ms
+2025-10-19 23:47:40.539 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.HomeController.Index (ProjectLab)'
+2025-10-19 23:47:40.543 +03:00 [INF] Finished handling request. Response status: 200
+2025-10-19 23:47:40.558 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/ - 200 null text/html; charset=utf-8 611.5426ms
+2025-10-19 23:47:40.584 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-19 23:47:40.587 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-19 23:47:40.596 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 13.65ms
+2025-10-19 23:47:40.669 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 81.8124ms
+2025-10-19 23:47:55.331 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Instructor/getAll - null null
+2025-10-19 23:47:55.341 +03:00 [INF] Handling request: GET /Instructor/getAll
+2025-10-19 23:47:55.345 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.InstructorController.getAll (ProjectLab)'
+2025-10-19 23:47:55.351 +03:00 [INF] Route matched with {action = "getAll", controller = "Instructor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAll() on controller ProjectLab.Controllers.InstructorController (ProjectLab).
+2025-10-19 23:47:58.816 +03:00 [INF] Executing ViewResult, running view getAll.
+2025-10-19 23:47:58.853 +03:00 [INF] Executed ViewResult - view getAll executed in 39.3788ms.
+2025-10-19 23:47:58.856 +03:00 [INF] Executed action ProjectLab.Controllers.InstructorController.getAll (ProjectLab) in 3500.8162ms
+2025-10-19 23:47:58.859 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.InstructorController.getAll (ProjectLab)'
+2025-10-19 23:47:58.862 +03:00 [INF] Finished handling request. Response status: 200
+2025-10-19 23:47:58.868 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Instructor/getAll - 200 null text/html; charset=utf-8 3536.6791ms
+2025-10-19 23:47:58.919 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Instructor/Aziz.jpg - null null
+2025-10-19 23:47:58.920 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-19 23:47:58.922 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Instructor/mos.jpg - null null
+2025-10-19 23:47:58.922 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Instructor/ahmed.jpg - null null
+2025-10-19 23:47:58.923 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Instructor/maher.jpg - null null
+2025-10-19 23:47:58.924 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-19 23:47:58.928 +03:00 [INF] Handling request: GET /Instructor/Aziz.jpg
+2025-10-19 23:47:58.934 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 14.2949ms
+2025-10-19 23:47:58.939 +03:00 [INF] Handling request: GET /Instructor/mos.jpg
+2025-10-19 23:47:58.954 +03:00 [INF] Handling request: GET /Instructor/ahmed.jpg
+2025-10-19 23:47:58.959 +03:00 [INF] Handling request: GET /Instructor/maher.jpg
+2025-10-19 23:47:58.981 +03:00 [INF] Finished handling request. Response status: 404
+2025-10-19 23:47:58.993 +03:00 [INF] Finished handling request. Response status: 404
+2025-10-19 23:47:58.993 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.3697ms
+2025-10-19 23:47:58.998 +03:00 [INF] Finished handling request. Response status: 404
+2025-10-19 23:47:59.006 +03:00 [INF] Finished handling request. Response status: 404
+2025-10-19 23:47:59.008 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Instructor/Aziz.jpg - 404 0 null 88.4246ms
+2025-10-19 23:47:59.010 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Instructor/mos.jpg - 404 0 null 87.5988ms
+2025-10-19 23:47:59.027 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Instructor/ahmed.jpg - 404 0 null 104.3707ms
+2025-10-19 23:47:59.030 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Instructor/maher.jpg - 404 0 null 106.4912ms
+2025-10-19 23:47:59.042 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/Instructor/Aziz.jpg, Response status code: 404
+2025-10-19 23:47:59.051 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/Instructor/mos.jpg, Response status code: 404
+2025-10-19 23:47:59.059 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/Instructor/ahmed.jpg, Response status code: 404
+2025-10-19 23:47:59.071 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/Instructor/maher.jpg, Response status code: 404
+2025-10-19 23:48:07.472 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Instructor/AddInstructor - null null
+2025-10-19 23:48:07.481 +03:00 [INF] Handling request: GET /Instructor/AddInstructor
+2025-10-19 23:48:07.483 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.InstructorController.AddInstructor (ProjectLab)'
+2025-10-19 23:48:07.487 +03:00 [INF] Route matched with {action = "AddInstructor", controller = "Instructor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddInstructor() on controller ProjectLab.Controllers.InstructorController (ProjectLab).
+2025-10-19 23:48:07.627 +03:00 [INF] Executing ViewResult, running view AddInstructor.
+2025-10-19 23:48:07.811 +03:00 [INF] Executed ViewResult - view AddInstructor executed in 185.5496ms.
+2025-10-19 23:48:07.818 +03:00 [INF] Executed action ProjectLab.Controllers.InstructorController.AddInstructor (ProjectLab) in 322.3895ms
+2025-10-19 23:48:07.824 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.InstructorController.AddInstructor (ProjectLab)'
+2025-10-19 23:48:07.829 +03:00 [INF] Finished handling request. Response status: 200
+2025-10-19 23:48:07.837 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Instructor/AddInstructor - 200 null text/html; charset=utf-8 365.3071ms
+2025-10-19 23:48:07.895 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-19 23:48:07.895 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-19 23:48:07.904 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 8.8873ms
+2025-10-19 23:48:07.920 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.7876ms

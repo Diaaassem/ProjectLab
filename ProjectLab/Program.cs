@@ -1,4 +1,5 @@
 using ProjectLab.MiddleWares;
+using Serilog;
 
 namespace ProjectLab
 {
@@ -7,6 +8,15 @@ namespace ProjectLab
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            // Configure Serilog with writing logs to a file and console
+            Log.Logger = new LoggerConfiguration()
+                .WriteTo.Console()
+                .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
+                .CreateLogger();
+
+            builder.Host.UseSerilog();
+
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();

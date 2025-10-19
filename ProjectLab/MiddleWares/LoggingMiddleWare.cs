@@ -1,10 +1,14 @@
-﻿namespace ProjectLab.MiddleWares
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
+
+namespace ProjectLab.MiddleWares
 {
     public class LoggingMiddleWare
     {
-        public readonly RequestDelegate _next;
+        private readonly RequestDelegate _next;
         private readonly ILogger<LoggingMiddleWare> _logger;
-        
+
         public LoggingMiddleWare(RequestDelegate next, ILogger<LoggingMiddleWare> logger)
         {
             _next = next;
@@ -15,7 +19,7 @@
         {
             _logger.LogInformation("Handling request: {Method} {Path}", context.Request.Method, context.Request.Path);
             await _next(context);
-            _logger.LogInformation("Finished handling request.");
+            _logger.LogInformation("Finished handling request. Response status: {StatusCode}", context.Response.StatusCode);
         }
     }
 }
