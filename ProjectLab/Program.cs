@@ -21,7 +21,7 @@ namespace ProjectLab
 
             app.UseExceptionHandlingMiddleware();
 
-            
+            app.UseLoggingMiddleware();
 
             app.UseStaticFiles();
 

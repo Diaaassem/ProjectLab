@@ -1,0 +1,21 @@
+﻿namespace ProjectLab.MiddleWares
+{
+    public class LoggingMiddleWare
+    {
+        public readonly RequestDelegate _next;
+        private readonly ILogger<LoggingMiddleWare> _logger;
+        
+        public LoggingMiddleWare(RequestDelegate next, ILogger<LoggingMiddleWare> logger)
+        {
+            _next = next;
+            _logger = logger;
+        }
+
+        public async Task InvokeAsync(HttpContext context)
+        {
+            _logger.LogInformation("Handling request: {Method} {Path}", context.Request.Method, context.Request.Path);
+            await _next(context);
+            _logger.LogInformation("Finished handling request.");
+        }
+    }
+}
