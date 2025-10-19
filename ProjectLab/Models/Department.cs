@@ -13,7 +13,8 @@
 
         public override string ToString()
         {
-            return $"DeptId: {DeptId}, Name: {Name}, Manager: {Manager}, Location: {Location}, Branch: {Branch}, Students: {Students.Count}, Instructors: {Instructors.Count}";
+            return $"DeptId: {DeptId}, Name: {Name}, Manager: {Manager}, Location: {Location}, Branch: {Branch}";
         }
     }
 }
+

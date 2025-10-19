@@ -66,11 +66,23 @@ namespace ProjectLab.Controllers
             return View();
         }
 
+        [HttpPost]
         public IActionResult AddNewStudent(Student student)
         {
-            _context.Students.Add(student);
-            _context.SaveChanges();
-            return RedirectToAction("getAll");
+            if (student.DeptId == null)
+            {
+                ModelState.AddModelError("DeptId", "Department is required.");
+            }
+
+            if (!ModelState.IsValid)  
+            {  
+                ViewBag.Departments = _context.Departments.ToList();  
+                return View("AddStudent", student);  
+            }  
+
+            _context.Students.Add(student);  
+            _context.SaveChanges();  
+            return RedirectToAction("getAll");  
         }
 
         public IActionResult Delete(int id)
@@ -99,14 +111,20 @@ namespace ProjectLab.Controllers
         [HttpPost]
         public IActionResult Edit(Student student)
         {
-            if (student == null)
+            if(student.DeptId == null)
             {
-                return BadRequest();
+                ModelState.AddModelError("DeptId", "Department is required.");
             }
-
+            if (!ModelState.IsValid)
+            {
+                ViewBag.Departments = _context.Departments.ToList();
+                return View(student);
+            }
             _context.Students.Update(student);
             _context.SaveChanges();
             return RedirectToAction("getAll");
         }
     }
 }
+
+

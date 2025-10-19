@@ -1,5 +1,6 @@
 ﻿@model Course
 
 <form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
     <partial name="_CourseForm" model="Model" />
 </form>

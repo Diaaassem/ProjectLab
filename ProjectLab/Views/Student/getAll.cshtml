@@ -1,10 +1,10 @@
 ﻿@model List<Student>
 
-<a href="/Student/AddStudent" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 10px;">
+<a asp-controller="Student" asp-action="AddStudent" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 10px;">
     <i class="bi bi-plus-lg"></i> Add New Student
 </a>
-<br />
-<br />
+
+<br /> <br />
 
 
 
@@ -17,6 +17,7 @@
             <th scope="col">Image</th>
             <th scope="col">Address</th>
             <th scope="col">Email</th>
+            <th scope="col">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -30,8 +31,8 @@
                 <td>@student.Address</td>
                 <td>@student.Email</td>
                 <td>
-                    <a href="/Student/Edit/@student.SSN" class="btn btn-warning btn-sm">Edit</a>
-                    <a href="/Student/Delete/@student.SSN" class="btn btn-danger btn-sm">Delete</a>
+                    <a asp-controller="Student" asp-action="Edit" asp-route-id="@student.SSN" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-controller="Student" asp-action="Delete" asp-route-id="@student.SSN" class="btn btn-danger btn-sm">Delete</a>
                 </td>
             </tr>
         }

@@ -85,5 +85,11 @@ namespace ProjectLab.Controllers
             }
             return View(course);
         }
+
+        public IActionResult IsCourseNameUnique(string name, int id)
+        {
+            bool isUnique = !context.Courses.Any(c => c.Name == name && c.Id != id);
+            return Json(isUnique);
+        }
     }
 }

@@ -16,6 +16,7 @@ namespace ProjectLab
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
             app.UseStaticFiles();
 
             app.UseRouting();
