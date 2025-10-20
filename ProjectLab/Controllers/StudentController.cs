@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using ProjectLab.Data;
@@ -88,6 +89,9 @@ namespace ProjectLab.Controllers
             return RedirectToAction("getAll");  
         }
 
+        [Authorize]
+        [HttpPost]
+        [ValidateAntiForgeryToken]      
         public IActionResult Delete(int id)
         {
             var student = _context.Students.FirstOrDefault(s => s.SSN == id);

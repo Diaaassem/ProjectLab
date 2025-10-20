@@ -1502,3 +1502,56 @@ System.NotImplementedException: The method or operation is not implemented.
 2025-10-20 23:21:50.980 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/mokhaimer.jpg, Response status code: 404
 2025-10-20 23:21:50.983 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
 2025-10-20 23:21:51.026 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.4391ms
+2025-10-20 23:34:24.562 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Department/getAll - null null
+2025-10-20 23:34:24.573 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.DepartmentController.getAll (ProjectLab)'
+2025-10-20 23:34:24.578 +03:00 [INF] Route matched with {action = "getAll", controller = "Department"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAll() on controller ProjectLab.Controllers.DepartmentController (ProjectLab).
+2025-10-20 23:34:24.665 +03:00 [INF] Executing ViewResult, running view getAll.
+2025-10-20 23:34:24.690 +03:00 [INF] Executed ViewResult - view getAll executed in 27.7276ms.
+2025-10-20 23:34:24.697 +03:00 [INF] Executed action ProjectLab.Controllers.DepartmentController.getAll (ProjectLab) in 114.8668ms
+2025-10-20 23:34:24.703 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.DepartmentController.getAll (ProjectLab)'
+2025-10-20 23:34:24.708 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Department/getAll - 200 null text/html; charset=utf-8 146.0743ms
+2025-10-20 23:34:24.778 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-20 23:34:24.780 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-20 23:34:24.790 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 11.3392ms
+2025-10-20 23:34:24.804 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.2039ms
+2025-10-20 23:34:27.186 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/std - null null
+2025-10-20 23:34:27.192 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.StudentController.getAll (ProjectLab)'
+2025-10-20 23:34:27.194 +03:00 [INF] Route matched with {action = "getAll", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAll() on controller ProjectLab.Controllers.StudentController (ProjectLab).
+2025-10-20 23:34:27.211 +03:00 [INF] Executing ViewResult, running view getAll.
+2025-10-20 23:34:27.215 +03:00 [INF] Executed ViewResult - view getAll executed in 4.342ms.
+2025-10-20 23:34:27.217 +03:00 [INF] Executed action ProjectLab.Controllers.StudentController.getAll (ProjectLab) in 16.2004ms
+2025-10-20 23:34:27.221 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.StudentController.getAll (ProjectLab)'
+2025-10-20 23:34:27.223 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/std - 200 null text/html; charset=utf-8 36.893ms
+2025-10-20 23:34:27.251 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/John.jpg - null null
+2025-10-20 23:34:27.253 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/layla.jpg - null null
+2025-10-20 23:34:27.254 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-20 23:34:27.256 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/nancy.jpg - null null
+2025-10-20 23:34:27.256 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/hend.jpg - null null
+2025-10-20 23:34:27.256 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/John.jpg - 404 0 null 5.2437ms
+2025-10-20 23:34:27.256 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/mokhaimer.jpg - null null
+2025-10-20 23:34:27.259 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/layla.jpg - 404 0 null 6.2201ms
+2025-10-20 23:34:27.264 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 9.8082ms
+2025-10-20 23:34:27.268 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/nancy.jpg - 404 0 null 12.7888ms
+2025-10-20 23:34:27.272 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/hend.jpg - 404 0 null 16.0002ms
+2025-10-20 23:34:27.275 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/John.jpg, Response status code: 404
+2025-10-20 23:34:27.279 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/mokhaimer.jpg - 404 0 null 22.9636ms
+2025-10-20 23:34:27.283 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/layla.jpg, Response status code: 404
+2025-10-20 23:34:27.293 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/nancy.jpg, Response status code: 404
+2025-10-20 23:34:27.298 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/hend.jpg, Response status code: 404
+2025-10-20 23:34:27.302 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-20 23:34:27.308 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/mokhaimer.jpg, Response status code: 404
+2025-10-20 23:34:27.330 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.6051ms
+2025-10-20 23:44:11.979 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Student/AddStudent - null null
+2025-10-20 23:44:11.994 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.StudentController.AddStudent (ProjectLab)'
+2025-10-20 23:44:11.999 +03:00 [INF] Route matched with {action = "AddStudent", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddStudent() on controller ProjectLab.Controllers.StudentController (ProjectLab).
+2025-10-20 23:44:12.151 +03:00 [INF] Executing ViewResult, running view AddStudent.
+2025-10-20 23:44:12.359 +03:00 [INF] Executed ViewResult - view AddStudent executed in 209.968ms.
+2025-10-20 23:44:12.365 +03:00 [INF] Executed action ProjectLab.Controllers.StudentController.AddStudent (ProjectLab) in 363.094ms
+2025-10-20 23:44:12.372 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.StudentController.AddStudent (ProjectLab)'
+2025-10-20 23:44:12.377 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Student/AddStudent - 200 null text/html; charset=utf-8 397.6864ms
+2025-10-20 23:44:12.437 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-20 23:44:12.437 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-20 23:44:12.446 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 9.0779ms
+2025-10-20 23:44:12.463 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.3873ms
+2025-10-20 23:44:15.490 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-20 23:44:15.495 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 5.203ms
