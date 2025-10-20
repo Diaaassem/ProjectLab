@@ -1,3 +1,4 @@
+using ProjectLab.Filters;
 using ProjectLab.MiddleWares;
 using Serilog;
 
@@ -21,6 +22,8 @@ namespace ProjectLab
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddMemoryCache();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -31,7 +34,7 @@ namespace ProjectLab
 
             app.UseExceptionHandlingMiddleware();
 
-            app.UseLoggingMiddleware();
+            //app.UseLoggingMiddleware();
 
             app.UseStaticFiles();
 
@@ -40,8 +43,14 @@ namespace ProjectLab
             app.UseAuthorization();
 
             app.MapControllerRoute(
+                name: "std",
+                pattern: "/std",
+                defaults: new { controller = "Student", action = "getAll" });
+
+            app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
             app.Run();
         }

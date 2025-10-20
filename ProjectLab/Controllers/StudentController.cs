@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using ProjectLab.Data;
+using ProjectLab.Filters;
 using ProjectLab.Models;
 using ProjectLab.Models.ViewModels;
 
@@ -10,6 +12,7 @@ namespace ProjectLab.Controllers
     {
         AppDbContext _context = new AppDbContext();
 
+        [ResultFilterCash]
         public IActionResult getAll()
         {
             var data = _context.Students.ToList();
