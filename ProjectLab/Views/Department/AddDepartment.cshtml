@@ -1,12 +1,18 @@
-﻿
+﻿@model Department
+
 <h3 class="form-container">Add New Department</h3>
 
 <div class="form-container">
     <div class="short-input">
-        <form action="/Department/AddNewDept">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <form asp-action="AddNewDept" method="post">
             <partial name="_DepartmentFormPartial" model="Model" />
             <br />
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
 </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

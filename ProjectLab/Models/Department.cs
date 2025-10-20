@@ -6,6 +6,7 @@
         public string Name { get; set; }
         public string Manager { get; set; }
         public string Location { get; set; }
+        public string City { get; set; }
         public Branch Branch { get; set; }
 
         public ICollection<Student> Students { get; set; } = new List<Student>();

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProjectLab.Data;
+using ProjectLab.Filters;
 using ProjectLab.Models;
 
 namespace ProjectLab.Controllers
@@ -49,11 +50,13 @@ namespace ProjectLab.Controllers
             return View();
         }
 
+        [HttpPost]
+        [DepartmentLocationFilter]
         public IActionResult AddNewDept(Department department)
         {
             if(!ModelState.IsValid)
             {
-                return View("AddDepartment");
+                return View("AddDepartment", department);
             }
             context.Departments.Add(department);
             context.SaveChanges();
