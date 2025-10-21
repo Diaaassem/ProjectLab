@@ -2051,3 +2051,437 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2025-10-21 01:51:51.042 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
 2025-10-21 01:51:51.055 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 12.5268ms
 2025-10-21 01:51:51.099 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.4814ms
+2025-10-21 04:09:59.587 +03:00 [INF] User profile is available. Using 'C:\Users\Diaa5\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-21 04:09:59.699 +03:00 [INF] Now listening on: http://localhost:5213
+2025-10-21 04:09:59.755 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-21 04:09:59.764 +03:00 [INF] Hosting environment: Development
+2025-10-21 04:09:59.764 +03:00 [INF] Content root path: D:\ITI-DOTNET\cSharp\MVC&API\MvcLab\ProjectLab
+2025-10-21 04:10:00.341 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/ - null null
+2025-10-21 04:10:00.452 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.HomeController.Index (ProjectLab)'
+2025-10-21 04:10:00.478 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ProjectLab.Controllers.HomeController (ProjectLab).
+2025-10-21 04:10:00.489 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-21 04:10:00.564 +03:00 [INF] Executed ViewResult - view Index executed in 75.5777ms.
+2025-10-21 04:10:00.572 +03:00 [INF] Executed action ProjectLab.Controllers.HomeController.Index (ProjectLab) in 89.6326ms
+2025-10-21 04:10:00.574 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.HomeController.Index (ProjectLab)'
+2025-10-21 04:10:00.579 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/ - 200 null text/html; charset=utf-8 240.1852ms
+2025-10-21 04:10:00.594 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:10:00.597 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:10:00.601 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 6.8158ms
+2025-10-21 04:10:00.623 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.0246ms
+2025-10-21 04:10:24.448 +03:00 [INF] User profile is available. Using 'C:\Users\Diaa5\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-21 04:10:24.543 +03:00 [INF] Now listening on: http://localhost:5213
+2025-10-21 04:10:24.600 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-21 04:10:24.600 +03:00 [INF] Hosting environment: Development
+2025-10-21 04:10:24.601 +03:00 [INF] Content root path: D:\ITI-DOTNET\cSharp\MVC&API\MvcLab\ProjectLab
+2025-10-21 04:10:24.947 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/ - null null
+2025-10-21 04:10:25.031 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.HomeController.Index (ProjectLab)'
+2025-10-21 04:10:25.053 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ProjectLab.Controllers.HomeController (ProjectLab).
+2025-10-21 04:10:25.062 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-21 04:10:25.127 +03:00 [INF] Executed ViewResult - view Index executed in 66.2494ms.
+2025-10-21 04:10:25.135 +03:00 [INF] Executed action ProjectLab.Controllers.HomeController.Index (ProjectLab) in 78.2357ms
+2025-10-21 04:10:25.137 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.HomeController.Index (ProjectLab)'
+2025-10-21 04:10:25.141 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/ - 200 null text/html; charset=utf-8 196.1531ms
+2025-10-21 04:10:25.152 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:10:25.152 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:10:25.159 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 7.35ms
+2025-10-21 04:10:25.176 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.9633ms
+2025-10-21 04:10:32.487 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Account/Login - null null
+2025-10-21 04:10:32.495 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:10:32.501 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:10:32.504 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-21 04:10:32.576 +03:00 [INF] Executed ViewResult - view Login executed in 72.5558ms.
+2025-10-21 04:10:32.578 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Login (ProjectLab) in 74.4978ms
+2025-10-21 04:10:32.579 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:10:32.582 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Account/Login - 200 null text/html; charset=utf-8 95.0304ms
+2025-10-21 04:10:32.595 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:10:32.595 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:10:32.600 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 4.6298ms
+2025-10-21 04:10:32.610 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.459ms
+2025-10-21 04:10:38.007 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Department/getAll - null null
+2025-10-21 04:10:38.014 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.DepartmentController.getAll (ProjectLab)'
+2025-10-21 04:10:38.016 +03:00 [INF] Route matched with {action = "getAll", controller = "Department"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAll() on controller ProjectLab.Controllers.DepartmentController (ProjectLab).
+2025-10-21 04:10:39.024 +03:00 [INF] Executing ViewResult, running view getAll.
+2025-10-21 04:10:39.033 +03:00 [INF] Executed ViewResult - view getAll executed in 10.0768ms.
+2025-10-21 04:10:39.035 +03:00 [INF] Executed action ProjectLab.Controllers.DepartmentController.getAll (ProjectLab) in 1016.2504ms
+2025-10-21 04:10:39.036 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.DepartmentController.getAll (ProjectLab)'
+2025-10-21 04:10:39.038 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Department/getAll - 200 null text/html; charset=utf-8 1030.6604ms
+2025-10-21 04:10:39.060 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:10:39.060 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:10:39.063 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 3.2124ms
+2025-10-21 04:10:39.069 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.8954ms
+2025-10-21 04:10:41.424 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Instructor/getAll - null null
+2025-10-21 04:10:41.431 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.InstructorController.getAll (ProjectLab)'
+2025-10-21 04:10:41.434 +03:00 [INF] Route matched with {action = "getAll", controller = "Instructor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAll() on controller ProjectLab.Controllers.InstructorController (ProjectLab).
+2025-10-21 04:10:41.603 +03:00 [INF] Executing ViewResult, running view getAll.
+2025-10-21 04:10:41.628 +03:00 [INF] Executed ViewResult - view getAll executed in 25.6043ms.
+2025-10-21 04:10:41.630 +03:00 [INF] Executed action ProjectLab.Controllers.InstructorController.getAll (ProjectLab) in 194.6128ms
+2025-10-21 04:10:41.632 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.InstructorController.getAll (ProjectLab)'
+2025-10-21 04:10:41.634 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Instructor/getAll - 200 null text/html; charset=utf-8 209.7502ms
+2025-10-21 04:10:41.647 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:10:41.648 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:10:41.648 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Instructor/Aziz.jpg - null null
+2025-10-21 04:10:41.649 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Instructor/mos.jpg - null null
+2025-10-21 04:10:41.649 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Instructor/ahmed.jpg - null null
+2025-10-21 04:10:41.650 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 3.2771ms
+2025-10-21 04:10:41.657 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.3139ms
+2025-10-21 04:10:41.659 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Instructor/Aziz.jpg - 404 0 null 10.1791ms
+2025-10-21 04:10:41.659 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Instructor/mos.jpg - 404 0 null 10.1089ms
+2025-10-21 04:10:41.660 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Instructor/ahmed.jpg - 404 0 null 11.688ms
+2025-10-21 04:10:41.672 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/Instructor/Aziz.jpg, Response status code: 404
+2025-10-21 04:10:41.676 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/Instructor/mos.jpg, Response status code: 404
+2025-10-21 04:10:41.679 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/Instructor/ahmed.jpg, Response status code: 404
+2025-10-21 04:10:47.628 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:10:47.631 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 3.7867ms
+2025-10-21 04:10:47.635 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:11:51.728 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/instructor/getAll - null null
+2025-10-21 04:11:51.734 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.InstructorController.getAll (ProjectLab)'
+2025-10-21 04:11:51.736 +03:00 [INF] Route matched with {action = "getAll", controller = "Instructor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAll() on controller ProjectLab.Controllers.InstructorController (ProjectLab).
+2025-10-21 04:11:51.789 +03:00 [INF] Executing ViewResult, running view getAll.
+2025-10-21 04:11:51.791 +03:00 [INF] Executed ViewResult - view getAll executed in 2.1906ms.
+2025-10-21 04:11:51.792 +03:00 [INF] Executed action ProjectLab.Controllers.InstructorController.getAll (ProjectLab) in 54.6449ms
+2025-10-21 04:11:51.794 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.InstructorController.getAll (ProjectLab)'
+2025-10-21 04:11:51.795 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/instructor/getAll - 200 null text/html; charset=utf-8 66.7591ms
+2025-10-21 04:11:51.821 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:11:51.823 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:11:51.823 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/instructor/Aziz.jpg - null null
+2025-10-21 04:11:51.824 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/instructor/ahmed.jpg - null null
+2025-10-21 04:11:51.824 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/instructor/mos.jpg - null null
+2025-10-21 04:11:51.825 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:11:51.825 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 3.9113ms
+2025-10-21 04:11:51.827 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 3.9068ms
+2025-10-21 04:11:51.829 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/instructor/Aziz.jpg - 404 0 null 6.0169ms
+2025-10-21 04:11:51.832 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/instructor/ahmed.jpg - 404 0 null 8.7059ms
+2025-10-21 04:11:51.834 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/instructor/mos.jpg - 404 0 null 9.8709ms
+2025-10-21 04:11:51.840 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.7686ms
+2025-10-21 04:11:51.841 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:11:51.848 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/instructor/Aziz.jpg, Response status code: 404
+2025-10-21 04:11:51.851 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/instructor/ahmed.jpg, Response status code: 404
+2025-10-21 04:11:51.854 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/instructor/mos.jpg, Response status code: 404
+2025-10-21 04:12:02.067 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/instructor/getAll - null null
+2025-10-21 04:12:02.073 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.InstructorController.getAll (ProjectLab)'
+2025-10-21 04:12:02.075 +03:00 [INF] Route matched with {action = "getAll", controller = "Instructor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAll() on controller ProjectLab.Controllers.InstructorController (ProjectLab).
+2025-10-21 04:12:02.078 +03:00 [INF] Executing ViewResult, running view getAll.
+2025-10-21 04:12:02.080 +03:00 [INF] Executed ViewResult - view getAll executed in 1.8827ms.
+2025-10-21 04:12:02.082 +03:00 [INF] Executed action ProjectLab.Controllers.InstructorController.getAll (ProjectLab) in 5.288ms
+2025-10-21 04:12:02.084 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.InstructorController.getAll (ProjectLab)'
+2025-10-21 04:12:02.085 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/instructor/getAll - 200 null text/html; charset=utf-8 17.4883ms
+2025-10-21 04:12:02.108 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/instructor/Aziz.jpg - null null
+2025-10-21 04:12:02.109 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/instructor/ahmed.jpg - null null
+2025-10-21 04:12:02.110 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:12:02.110 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/instructor/mos.jpg - null null
+2025-10-21 04:12:02.111 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:12:02.112 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/instructor/Aziz.jpg - 404 0 null 3.9071ms
+2025-10-21 04:12:02.116 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/instructor/ahmed.jpg - 404 0 null 7.2093ms
+2025-10-21 04:12:02.117 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 6.9022ms
+2025-10-21 04:12:02.120 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/instructor/mos.jpg - 404 0 null 9.5928ms
+2025-10-21 04:12:02.140 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/instructor/Aziz.jpg, Response status code: 404
+2025-10-21 04:12:02.142 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.3522ms
+2025-10-21 04:12:02.144 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/instructor/ahmed.jpg, Response status code: 404
+2025-10-21 04:12:02.151 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/instructor/mos.jpg, Response status code: 404
+2025-10-21 04:12:02.160 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:12:02.165 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 4.5627ms
+2025-10-21 04:12:02.169 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:12:25.085 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/std - null null
+2025-10-21 04:12:25.091 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.StudentController.getAll (ProjectLab)'
+2025-10-21 04:12:25.095 +03:00 [INF] Route matched with {action = "getAll", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAll() on controller ProjectLab.Controllers.StudentController (ProjectLab).
+2025-10-21 04:12:25.126 +03:00 [INF] Executing ViewResult, running view getAll.
+2025-10-21 04:12:25.137 +03:00 [INF] Executed ViewResult - view getAll executed in 11.4035ms.
+2025-10-21 04:12:25.138 +03:00 [INF] Executed action ProjectLab.Controllers.StudentController.getAll (ProjectLab) in 38.1464ms
+2025-10-21 04:12:25.140 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.StudentController.getAll (ProjectLab)'
+2025-10-21 04:12:25.141 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/std - 200 null text/html; charset=utf-8 55.9568ms
+2025-10-21 04:12:25.160 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/diaa.jpg - null null
+2025-10-21 04:12:25.161 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:12:25.161 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:12:25.163 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/diaa.jpg - 404 0 null 2.8216ms
+2025-10-21 04:12:25.167 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 6.2101ms
+2025-10-21 04:12:25.171 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.6571ms
+2025-10-21 04:12:25.172 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/diaa.jpg, Response status code: 404
+2025-10-21 04:12:25.178 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:12:25.182 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 4.393ms
+2025-10-21 04:12:25.185 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:12:27.678 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Account/Login - null null
+2025-10-21 04:12:27.685 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:12:27.686 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:12:27.688 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-21 04:12:27.689 +03:00 [INF] Executed ViewResult - view Login executed in 1.44ms.
+2025-10-21 04:12:27.690 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Login (ProjectLab) in 2.7054ms
+2025-10-21 04:12:27.692 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:12:27.693 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Account/Login - 200 null text/html; charset=utf-8 14.2475ms
+2025-10-21 04:12:27.714 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:12:27.714 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:12:27.717 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 3.1257ms
+2025-10-21 04:12:27.721 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.729ms
+2025-10-21 04:12:27.730 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:12:27.733 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.5222ms
+2025-10-21 04:12:27.735 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:12:33.348 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/Account/Login - application/x-www-form-urlencoded 27
+2025-10-21 04:12:33.354 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:12:33.363 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String, Boolean) on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:12:33.386 +03:00 [INF] AuthenticationScheme: Cookies signed in.
+2025-10-21 04:12:33.388 +03:00 [INF] Executing RedirectResult, redirecting to /std.
+2025-10-21 04:12:33.389 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Login (ProjectLab) in 23.774ms
+2025-10-21 04:12:33.390 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:12:33.391 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/Account/Login - 302 0 null 43.5856ms
+2025-10-21 04:12:33.395 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/std - null null
+2025-10-21 04:12:33.398 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.StudentController.getAll (ProjectLab)'
+2025-10-21 04:12:33.400 +03:00 [INF] Route matched with {action = "getAll", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAll() on controller ProjectLab.Controllers.StudentController (ProjectLab).
+2025-10-21 04:12:33.404 +03:00 [INF] Executing ViewResult, running view getAll.
+2025-10-21 04:12:33.408 +03:00 [INF] Executed ViewResult - view getAll executed in 3.99ms.
+2025-10-21 04:12:33.409 +03:00 [INF] Executed action ProjectLab.Controllers.StudentController.getAll (ProjectLab) in 7.2193ms
+2025-10-21 04:12:33.411 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.StudentController.getAll (ProjectLab)'
+2025-10-21 04:12:33.412 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/std - 200 null text/html; charset=utf-8 17.4744ms
+2025-10-21 04:12:33.438 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/diaa.jpg - null null
+2025-10-21 04:12:33.442 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/diaa.jpg - 404 0 null 4.2957ms
+2025-10-21 04:12:33.444 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:12:33.445 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/diaa.jpg, Response status code: 404
+2025-10-21 04:12:33.449 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:12:33.450 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.1837ms
+2025-10-21 04:12:33.453 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 3.6604ms
+2025-10-21 04:12:33.469 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:12:33.471 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.6006ms
+2025-10-21 04:12:33.474 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:12:59.928 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/Account/Logout - application/x-www-form-urlencoded 225
+2025-10-21 04:12:59.933 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Logout (ProjectLab)'
+2025-10-21 04:12:59.939 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:12:59.942 +03:00 [INF] AuthenticationScheme: Cookies signed out.
+2025-10-21 04:12:59.943 +03:00 [INF] Executing RedirectResult, redirecting to /Account/Login.
+2025-10-21 04:12:59.944 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Logout (ProjectLab) in 3.2461ms
+2025-10-21 04:12:59.945 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Logout (ProjectLab)'
+2025-10-21 04:12:59.946 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/Account/Logout - 302 0 null 17.4088ms
+2025-10-21 04:12:59.949 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Account/Login - null null
+2025-10-21 04:12:59.954 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:12:59.955 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:12:59.957 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-21 04:12:59.959 +03:00 [INF] Executed ViewResult - view Login executed in 2.2035ms.
+2025-10-21 04:12:59.961 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Login (ProjectLab) in 3.7313ms
+2025-10-21 04:12:59.962 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:12:59.963 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Account/Login - 200 null text/html; charset=utf-8 14.1659ms
+2025-10-21 04:12:59.994 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:12:59.995 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:12:59.999 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.46ms
+2025-10-21 04:13:00.001 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 6.1147ms
+2025-10-21 04:13:00.031 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:13:00.034 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 3.0732ms
+2025-10-21 04:13:00.037 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:13:02.855 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Account/Login - null null
+2025-10-21 04:13:02.859 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:02.861 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:13:02.863 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-21 04:13:02.864 +03:00 [INF] Executed ViewResult - view Login executed in 1.236ms.
+2025-10-21 04:13:02.865 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Login (ProjectLab) in 2.5132ms
+2025-10-21 04:13:02.869 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:02.871 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Account/Login - 200 null text/html; charset=utf-8 16.4789ms
+2025-10-21 04:13:02.892 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:13:02.893 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:13:02.894 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 2.3087ms
+2025-10-21 04:13:02.899 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.8148ms
+2025-10-21 04:13:02.907 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:13:02.909 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.4411ms
+2025-10-21 04:13:02.912 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:13:11.285 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/Account/Login - application/x-www-form-urlencoded 29
+2025-10-21 04:13:11.289 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:11.290 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String, Boolean) on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:13:11.293 +03:00 [INF] AuthenticationScheme: Cookies signed in.
+2025-10-21 04:13:11.294 +03:00 [INF] Executing RedirectResult, redirecting to /std.
+2025-10-21 04:13:11.295 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Login (ProjectLab) in 2.6356ms
+2025-10-21 04:13:11.296 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:11.297 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/Account/Login - 302 0 null 11.4782ms
+2025-10-21 04:13:11.300 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/std - null null
+2025-10-21 04:13:11.303 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.StudentController.getAll (ProjectLab)'
+2025-10-21 04:13:11.304 +03:00 [INF] Route matched with {action = "getAll", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAll() on controller ProjectLab.Controllers.StudentController (ProjectLab).
+2025-10-21 04:13:11.307 +03:00 [INF] Executing ViewResult, running view getAll.
+2025-10-21 04:13:11.309 +03:00 [INF] Executed ViewResult - view getAll executed in 1.9427ms.
+2025-10-21 04:13:11.310 +03:00 [INF] Executed action ProjectLab.Controllers.StudentController.getAll (ProjectLab) in 4.1463ms
+2025-10-21 04:13:11.311 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.StudentController.getAll (ProjectLab)'
+2025-10-21 04:13:11.312 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/std - 200 null text/html; charset=utf-8 11.7945ms
+2025-10-21 04:13:11.334 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/diaa.jpg - null null
+2025-10-21 04:13:11.337 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/diaa.jpg - 404 0 null 3.2647ms
+2025-10-21 04:13:11.340 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/diaa.jpg, Response status code: 404
+2025-10-21 04:13:11.343 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:13:11.343 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:13:11.350 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 7.1072ms
+2025-10-21 04:13:11.356 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.0905ms
+2025-10-21 04:13:11.368 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:13:11.370 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.2572ms
+2025-10-21 04:13:11.373 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:13:30.088 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/Account/Logout - application/x-www-form-urlencoded 225
+2025-10-21 04:13:30.092 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Logout (ProjectLab)'
+2025-10-21 04:13:30.094 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:13:30.096 +03:00 [INF] AuthenticationScheme: Cookies signed out.
+2025-10-21 04:13:30.098 +03:00 [INF] Executing RedirectResult, redirecting to /Account/Login.
+2025-10-21 04:13:30.099 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Logout (ProjectLab) in 3.5408ms
+2025-10-21 04:13:30.101 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Logout (ProjectLab)'
+2025-10-21 04:13:30.103 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/Account/Logout - 302 0 null 14.5076ms
+2025-10-21 04:13:30.106 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Account/Login - null null
+2025-10-21 04:13:30.111 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:30.112 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:13:30.115 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-21 04:13:30.118 +03:00 [INF] Executed ViewResult - view Login executed in 3.1244ms.
+2025-10-21 04:13:30.120 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Login (ProjectLab) in 5.4423ms
+2025-10-21 04:13:30.122 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:30.123 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Account/Login - 200 null text/html; charset=utf-8 17.3771ms
+2025-10-21 04:13:30.154 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:13:30.154 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:13:30.156 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 2.4029ms
+2025-10-21 04:13:30.161 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.7402ms
+2025-10-21 04:13:30.181 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:13:30.184 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.7409ms
+2025-10-21 04:13:30.188 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:13:31.580 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Account/Login - null null
+2025-10-21 04:13:31.584 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:31.586 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:13:31.589 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-21 04:13:31.590 +03:00 [INF] Executed ViewResult - view Login executed in 1.4629ms.
+2025-10-21 04:13:31.591 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Login (ProjectLab) in 2.6887ms
+2025-10-21 04:13:31.592 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:31.594 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Account/Login - 200 null text/html; charset=utf-8 13.5378ms
+2025-10-21 04:13:31.621 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:13:31.621 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:13:31.625 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 3.7056ms
+2025-10-21 04:13:31.628 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.2435ms
+2025-10-21 04:13:31.636 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:13:31.638 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.1504ms
+2025-10-21 04:13:31.640 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:13:35.068 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/Account/Login - application/x-www-form-urlencoded 28
+2025-10-21 04:13:35.073 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:35.074 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String, Boolean) on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:13:35.077 +03:00 [INF] AuthenticationScheme: Cookies signed in.
+2025-10-21 04:13:35.077 +03:00 [INF] Executing RedirectResult, redirecting to /std.
+2025-10-21 04:13:35.079 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Login (ProjectLab) in 2.3937ms
+2025-10-21 04:13:35.081 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:35.083 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/Account/Login - 302 0 null 15.2881ms
+2025-10-21 04:13:35.088 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/std - null null
+2025-10-21 04:13:35.091 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.StudentController.getAll (ProjectLab)'
+2025-10-21 04:13:35.092 +03:00 [INF] Route matched with {action = "getAll", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAll() on controller ProjectLab.Controllers.StudentController (ProjectLab).
+2025-10-21 04:13:35.096 +03:00 [INF] Executing ViewResult, running view getAll.
+2025-10-21 04:13:35.098 +03:00 [INF] Executed ViewResult - view getAll executed in 1.6164ms.
+2025-10-21 04:13:35.099 +03:00 [INF] Executed action ProjectLab.Controllers.StudentController.getAll (ProjectLab) in 6.5119ms
+2025-10-21 04:13:35.101 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.StudentController.getAll (ProjectLab)'
+2025-10-21 04:13:35.103 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/std - 200 null text/html; charset=utf-8 15.1199ms
+2025-10-21 04:13:35.134 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/diaa.jpg - null null
+2025-10-21 04:13:35.137 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:13:35.138 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:13:35.140 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/diaa.jpg - 404 0 null 5.6656ms
+2025-10-21 04:13:35.143 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 5.2842ms
+2025-10-21 04:13:35.148 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.4428ms
+2025-10-21 04:13:35.149 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/diaa.jpg, Response status code: 404
+2025-10-21 04:13:35.155 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:13:35.160 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 5.1823ms
+2025-10-21 04:13:35.163 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:13:45.472 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/Account/Logout - application/x-www-form-urlencoded 225
+2025-10-21 04:13:45.476 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Logout (ProjectLab)'
+2025-10-21 04:13:45.477 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:13:45.479 +03:00 [INF] AuthenticationScheme: Cookies signed out.
+2025-10-21 04:13:45.480 +03:00 [INF] Executing RedirectResult, redirecting to /Account/Login.
+2025-10-21 04:13:45.481 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Logout (ProjectLab) in 1.7515ms
+2025-10-21 04:13:45.482 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Logout (ProjectLab)'
+2025-10-21 04:13:45.483 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/Account/Logout - 302 0 null 10.1764ms
+2025-10-21 04:13:45.487 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Account/Login - null null
+2025-10-21 04:13:45.490 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:45.491 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:13:45.493 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-21 04:13:45.495 +03:00 [INF] Executed ViewResult - view Login executed in 1.7118ms.
+2025-10-21 04:13:45.496 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Login (ProjectLab) in 2.882ms
+2025-10-21 04:13:45.497 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:45.499 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Account/Login - 200 null text/html; charset=utf-8 10.9949ms
+2025-10-21 04:13:45.530 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:13:45.530 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:13:45.535 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 4.735ms
+2025-10-21 04:13:45.540 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.3431ms
+2025-10-21 04:13:45.544 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:13:45.546 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.405ms
+2025-10-21 04:13:45.549 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:13:49.002 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Account/Login - null null
+2025-10-21 04:13:49.007 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:49.008 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:13:49.011 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-21 04:13:49.015 +03:00 [INF] Executed ViewResult - view Login executed in 4.1998ms.
+2025-10-21 04:13:49.016 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Login (ProjectLab) in 5.2723ms
+2025-10-21 04:13:49.018 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:49.036 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Account/Login - 200 null text/html; charset=utf-8 30.8347ms
+2025-10-21 04:13:49.057 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:13:49.057 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:13:49.059 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 2.3823ms
+2025-10-21 04:13:49.063 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.165ms
+2025-10-21 04:13:49.082 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:13:49.086 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 3.4145ms
+2025-10-21 04:13:49.089 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:13:53.303 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/Account/Login - application/x-www-form-urlencoded 25
+2025-10-21 04:13:53.307 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:53.309 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String, Boolean) on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:13:53.312 +03:00 [INF] AuthenticationScheme: Cookies signed in.
+2025-10-21 04:13:53.313 +03:00 [INF] Executing RedirectResult, redirecting to /std.
+2025-10-21 04:13:53.314 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Login (ProjectLab) in 2.7258ms
+2025-10-21 04:13:53.315 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:53.316 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/Account/Login - 302 0 null 12.3959ms
+2025-10-21 04:13:53.321 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/std - null null
+2025-10-21 04:13:53.324 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.StudentController.getAll (ProjectLab)'
+2025-10-21 04:13:53.326 +03:00 [INF] Route matched with {action = "getAll", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAll() on controller ProjectLab.Controllers.StudentController (ProjectLab).
+2025-10-21 04:13:53.329 +03:00 [INF] Executing ViewResult, running view getAll.
+2025-10-21 04:13:53.332 +03:00 [INF] Executed ViewResult - view getAll executed in 2.9805ms.
+2025-10-21 04:13:53.334 +03:00 [INF] Executed action ProjectLab.Controllers.StudentController.getAll (ProjectLab) in 6.5426ms
+2025-10-21 04:13:53.336 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.StudentController.getAll (ProjectLab)'
+2025-10-21 04:13:53.337 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/std - 200 null text/html; charset=utf-8 16.6209ms
+2025-10-21 04:13:53.372 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/diaa.jpg - null null
+2025-10-21 04:13:53.374 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:13:53.375 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:13:53.378 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/diaa.jpg - 404 0 null 6.0934ms
+2025-10-21 04:13:53.381 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 7.5243ms
+2025-10-21 04:13:53.387 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/diaa.jpg, Response status code: 404
+2025-10-21 04:13:53.388 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.8943ms
+2025-10-21 04:13:53.396 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:13:53.399 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.4081ms
+2025-10-21 04:13:53.402 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:13:59.765 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/Account/Logout - application/x-www-form-urlencoded 225
+2025-10-21 04:13:59.770 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Logout (ProjectLab)'
+2025-10-21 04:13:59.771 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:13:59.773 +03:00 [INF] AuthenticationScheme: Cookies signed out.
+2025-10-21 04:13:59.774 +03:00 [INF] Executing RedirectResult, redirecting to /Account/Login.
+2025-10-21 04:13:59.774 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Logout (ProjectLab) in 1.7666ms
+2025-10-21 04:13:59.775 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Logout (ProjectLab)'
+2025-10-21 04:13:59.776 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/Account/Logout - 302 0 null 11.0973ms
+2025-10-21 04:13:59.779 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Account/Login - null null
+2025-10-21 04:13:59.782 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:59.783 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ProjectLab.Controllers.AccountController (ProjectLab).
+2025-10-21 04:13:59.786 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-21 04:13:59.788 +03:00 [INF] Executed ViewResult - view Login executed in 2.1901ms.
+2025-10-21 04:13:59.790 +03:00 [INF] Executed action ProjectLab.Controllers.AccountController.Login (ProjectLab) in 4ms
+2025-10-21 04:13:59.791 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.AccountController.Login (ProjectLab)'
+2025-10-21 04:13:59.793 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Account/Login - 200 null text/html; charset=utf-8 13.2909ms
+2025-10-21 04:13:59.825 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:13:59.825 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:13:59.827 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 2.376ms
+2025-10-21 04:13:59.831 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.6053ms
+2025-10-21 04:13:59.841 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 04:13:59.843 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.0039ms
+2025-10-21 04:13:59.846 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 04:16:54.187 +03:00 [INF] User profile is available. Using 'C:\Users\Diaa5\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-21 04:16:54.421 +03:00 [INF] Now listening on: http://localhost:5213
+2025-10-21 04:16:54.517 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-21 04:16:54.519 +03:00 [INF] Hosting environment: Development
+2025-10-21 04:16:54.520 +03:00 [INF] Content root path: D:\ITI-DOTNET\cSharp\MVC&API\MvcLab\ProjectLab
+2025-10-21 04:16:54.566 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/ - null null
+2025-10-21 04:16:54.811 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.HomeController.Index (ProjectLab)'
+2025-10-21 04:16:54.847 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ProjectLab.Controllers.HomeController (ProjectLab).
+2025-10-21 04:16:54.860 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-21 04:16:54.944 +03:00 [INF] Executed ViewResult - view Index executed in 86.8751ms.
+2025-10-21 04:16:54.946 +03:00 [INF] Executed action ProjectLab.Controllers.HomeController.Index (ProjectLab) in 95.7675ms
+2025-10-21 04:16:54.947 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.HomeController.Index (ProjectLab)'
+2025-10-21 04:16:54.952 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/ - 200 null text/html; charset=utf-8 393.0268ms
+2025-10-21 04:16:54.965 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:16:54.966 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:16:54.969 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 5.6164ms
+2025-10-21 04:16:55.001 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.2531ms
+2025-10-21 04:17:10.832 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Cookie?Set=theme&Value=dark - null null
+2025-10-21 04:17:10.848 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Cookie?Set=theme&Value=dark - 404 0 null 16.5081ms
+2025-10-21 04:17:10.852 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/Cookie, Response status code: 404
+2025-10-21 04:17:40.095 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Cookie/Set?key=theme&value=dark - null null
+2025-10-21 04:17:40.113 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.CookieController.Set (ProjectLab)'
+2025-10-21 04:17:40.121 +03:00 [INF] Route matched with {action = "Set", controller = "Cookie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Set(System.String, System.String, Int32) on controller ProjectLab.Controllers.CookieController (ProjectLab).
+2025-10-21 04:18:16.181 +03:00 [INF] Executing RedirectResult, redirecting to /Student.
+2025-10-21 04:18:16.183 +03:00 [INF] Executed action ProjectLab.Controllers.CookieController.Set (ProjectLab) in 36058.1195ms
+2025-10-21 04:18:16.184 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.CookieController.Set (ProjectLab)'
+2025-10-21 04:18:16.186 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Cookie/Set?key=theme&value=dark - 302 0 null 36091.0029ms
+2025-10-21 04:18:16.189 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Student - null null
+2025-10-21 04:18:16.197 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Student - 404 0 null 7.078ms
+2025-10-21 04:18:16.202 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/Student, Response status code: 404

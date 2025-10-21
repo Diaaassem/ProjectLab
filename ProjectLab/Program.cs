@@ -1,6 +1,11 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.CookiePolicy;
+using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.Http;
+using ProjectLab.Cookies;
 using ProjectLab.Filters;
 using ProjectLab.MiddleWares;
+using ProjectLab.Services;
 using Serilog;
 
 namespace ProjectLab
@@ -19,6 +24,22 @@ namespace ProjectLab
 
             builder.Host.UseSerilog();
 
+            // Add data protection (used to protect cookie payloads)
+            builder.Services.AddDataProtection();
+
+            // Provide IHttpContextAccessor so services can access HttpContext
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            // Register a cookie helper service
+            builder.Services.AddScoped<ICookieService, CookieService>();
+
+            // Configure cookie policy defaults (HttpOnly, SameSite, Secure policy)
+            builder.Services.Configure<CookiePolicyOptions>(options =>
+            {
+                options.HttpOnly = HttpOnlyPolicy.Always;
+                options.MinimumSameSitePolicy = SameSiteMode.Lax;
+                options.Secure = CookieSecurePolicy.SameAsRequest;
+            });
 
             // Add authentication services
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -52,6 +73,9 @@ namespace ProjectLab
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            // enforce cookie policy before authentication
+            app.UseCookiePolicy();
 
             app.UseAuthentication();
             app.UseAuthorization();
