@@ -7,7 +7,13 @@ namespace ProjectLab.Controllers
 {
     public class InstructorController : Controller
     {
-        AppDbContext _context = new AppDbContext();
+        private readonly AppDbContext _context;
+
+        public InstructorController(AppDbContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult getAll()
         {
             var data = _context.Instructors.Include(i => i.Department).ToList();

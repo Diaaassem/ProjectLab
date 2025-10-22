@@ -2,9 +2,12 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.CookiePolicy;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using ProjectLab.Cookies;
+using ProjectLab.Data;
 using ProjectLab.Filters;
 using ProjectLab.MiddleWares;
+using ProjectLab.Repos;
 using ProjectLab.Services;
 using Serilog;
 
@@ -33,6 +36,10 @@ namespace ProjectLab
             // Register a cookie helper service
             builder.Services.AddScoped<ICookieService, CookieService>();
 
+            // Register AppDbContext
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer("Server=.\\SQLEXPRESS;Database=MvcLab;Trusted_Connection=True;TrustServerCertificate=True"));
+
             // Configure cookie policy defaults (HttpOnly, SameSite, Secure policy)
             builder.Services.Configure<CookiePolicyOptions>(options =>
             {
@@ -57,6 +64,8 @@ namespace ProjectLab
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddMemoryCache();
+
+            builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
             var app = builder.Build();
 

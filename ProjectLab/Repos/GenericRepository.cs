@@ -1,0 +1,87 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
+using ProjectLab.Data;
+using System.Linq.Expressions;
+
+namespace ProjectLab.Repos
+{
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
+    {
+        private readonly AppDbContext _context;
+        private readonly DbSet<T> _dbSet;
+
+        public GenericRepository(AppDbContext context)
+        {
+            _context = context;
+            _dbSet = _context.Set<T>();
+        }
+
+        public async Task<IEnumerable<T>> GetAllAsync()
+        {
+            return await _dbSet.ToListAsync();
+        }
+
+        public async Task<T> GetByIdAsync(int id)
+        {
+            return await _dbSet.FindAsync(id);
+        }
+
+        public async Task<T> GetByIdAsync(int id, params Expression<Func<T, object>>[] includes)
+        {
+            IQueryable<T> query = _dbSet;
+            
+            foreach (var include in includes)
+            {
+                query = query.Include(include);
+            }
+            
+            return await query.FirstOrDefaultAsync(e => EF.Property<int>(e, "SSN") == id || EF.Property<int>(e, "Id") == id || EF.Property<int>(e, "DeptId") == id);
+        }
+
+        public async Task<T> GetFirstOrDefaultAsync(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includes)
+        {
+            IQueryable<T> query = _dbSet;
+            
+            foreach (var include in includes)
+            {
+                query = query.Include(include);
+            }
+            
+            return await query.FirstOrDefaultAsync(predicate);
+        }
+
+        public async Task<T> GetWithCustomIncludeAsync(Expression<Func<T, bool>> predicate, Func<IQueryable<T>, IIncludableQueryable<T, object>> include)
+        {
+            IQueryable<T> query = _dbSet;
+            
+            if (include != null)
+            {
+                query = include(query);
+            }
+            
+            return await query.FirstOrDefaultAsync(predicate);
+        }
+
+        public async Task AddAsync(T entity)
+        {
+            await _dbSet.AddAsync(entity);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task UpdateAsync(T entity)
+        {
+            _dbSet.Update(entity);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteAsync(int id)
+        {
+            var entity = await _dbSet.FindAsync(id);
+            if (entity != null)
+            {
+                _dbSet.Remove(entity);
+                await _context.SaveChangesAsync();
+            }
+        }
+    }
+}

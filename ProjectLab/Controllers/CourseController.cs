@@ -7,11 +7,16 @@ namespace ProjectLab.Controllers
 {
     public class CourseController : Controller
     {
-        AppDbContext context = new AppDbContext();
+        private readonly AppDbContext _context;
+
+        public CourseController(AppDbContext context)
+        {
+            _context = context;
+        }
 
         public IActionResult getAll()
         {
-            var courses = context.Courses
+            var courses = _context.Courses
                 .Include(c => c.Registrations)
                     .ThenInclude(r => r.Student)    
                 .Include(c => c.TeachCourses)
@@ -22,7 +27,7 @@ namespace ProjectLab.Controllers
 
         public IActionResult Details(int id)
         {
-            var course = context.Courses
+            var course = _context.Courses
                 .Include(c => c.Registrations)
                     .ThenInclude(r => r.Student)
                 .Include(c => c.TeachCourses)
@@ -44,8 +49,8 @@ namespace ProjectLab.Controllers
         {
             if (ModelState.IsValid)
             {
-                context.Courses.Add(course);
-                context.SaveChanges();
+                _context.Courses.Add(course);
+                _context.SaveChanges();
                 return RedirectToAction("getAll");
             }
             return View(course);
@@ -53,20 +58,20 @@ namespace ProjectLab.Controllers
 
         public IActionResult Delete(int id)
         {
-            var course = context.Courses.Find(id);
+            var course = _context.Courses.Find(id);
             if (course == null)
             {
                 return NotFound();
             }
-            context.Courses.Remove(course);
-            context.SaveChanges();
+            _context.Courses.Remove(course);
+            _context.SaveChanges();
             return RedirectToAction("getAll");
         }
 
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var course = context.Courses.Find(id);
+            var course = _context.Courses.Find(id);
             if (course == null)
             {
                 return NotFound();
@@ -79,8 +84,8 @@ namespace ProjectLab.Controllers
         {
             if (ModelState.IsValid)
             {
-                context.Courses.Update(course);
-                context.SaveChanges();
+                _context.Courses.Update(course);
+                _context.SaveChanges();
                 return RedirectToAction("getAll");
             }
             return View(course);
@@ -88,7 +93,7 @@ namespace ProjectLab.Controllers
 
         public IActionResult IsCourseNameUnique(string name, int id)
         {
-            bool isUnique = !context.Courses.Any(c => c.Name == name && c.Id != id);
+            bool isUnique = !_context.Courses.Any(c => c.Name == name && c.Id != id);
             return Json(isUnique);
         }
     }

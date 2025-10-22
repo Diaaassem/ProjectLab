@@ -8,16 +8,22 @@ namespace ProjectLab.Controllers
 {
     public class DepartmentController : Controller
     {
-        AppDbContext context = new AppDbContext();
+        private readonly AppDbContext _context;
+
+        public DepartmentController(AppDbContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult getAll()
         {
-            var depts = context.Departments.ToList();
+            var depts = _context.Departments.ToList();
             return View(depts);
         }
 
         public IActionResult DetailsById(int id)
         {
-            var dept = context.Departments
+            var dept = _context.Departments
                 .Include(d => d.Students)
                 .Include(d => d.Instructors)
                 .SingleOrDefault(d => d.DeptId == id);
@@ -32,7 +38,7 @@ namespace ProjectLab.Controllers
 
         public IActionResult DetailsByName(string name)
         {
-            var dept = context.Departments
+            var dept = _context.Departments
                 .Include(d => d.Students)
                 .Include(d => d.Instructors)
                 .SingleOrDefault(d => d.Name == name);
@@ -58,26 +64,26 @@ namespace ProjectLab.Controllers
             {
                 return View("AddDepartment", department);
             }
-            context.Departments.Add(department);
-            context.SaveChanges();
+            _context.Departments.Add(department);
+            _context.SaveChanges();
             return RedirectToAction("getAll");
         }
 
         public IActionResult Delete(int id)
         {
-            var dept = context.Departments.Find(id);
+            var dept = _context.Departments.Find(id);
             if (dept == null)
             {
                 return NotFound();
             }
-            context.Departments.Remove(dept);
-            context.SaveChanges();
+            _context.Departments.Remove(dept);
+            _context.SaveChanges();
             return RedirectToAction("getAll");
         }
 
         public IActionResult Edit(int id)
         {
-            var dept = context.Departments.Find(id);
+            var dept = _context.Departments.Find(id);
             if (dept == null)
             {
                 return NotFound();
@@ -88,8 +94,8 @@ namespace ProjectLab.Controllers
         [HttpPost]
         public IActionResult Edit(Department department)
         {
-            context.Departments.Update(department);
-            context.SaveChanges();
+            _context.Departments.Update(department);
+            _context.SaveChanges();
             return RedirectToAction("getAll");
         }
     }

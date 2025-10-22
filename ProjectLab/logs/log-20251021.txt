@@ -2485,3 +2485,20 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2025-10-21 04:18:16.189 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/Student - null null
 2025-10-21 04:18:16.197 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/Student - 404 0 null 7.078ms
 2025-10-21 04:18:16.202 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/Student, Response status code: 404
+2025-10-21 04:22:20.545 +03:00 [INF] User profile is available. Using 'C:\Users\Diaa5\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-21 04:22:20.635 +03:00 [INF] Now listening on: http://localhost:5213
+2025-10-21 04:22:20.691 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-21 04:22:20.692 +03:00 [INF] Hosting environment: Development
+2025-10-21 04:22:20.693 +03:00 [INF] Content root path: D:\ITI-DOTNET\cSharp\MVC&API\MvcLab\ProjectLab
+2025-10-21 04:22:20.889 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/ - null null
+2025-10-21 04:22:20.975 +03:00 [INF] Executing endpoint 'ProjectLab.Controllers.HomeController.Index (ProjectLab)'
+2025-10-21 04:22:20.995 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ProjectLab.Controllers.HomeController (ProjectLab).
+2025-10-21 04:22:21.003 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-21 04:22:21.070 +03:00 [INF] Executed ViewResult - view Index executed in 65.9018ms.
+2025-10-21 04:22:21.075 +03:00 [INF] Executed action ProjectLab.Controllers.HomeController.Index (ProjectLab) in 76.6302ms
+2025-10-21 04:22:21.076 +03:00 [INF] Executed endpoint 'ProjectLab.Controllers.HomeController.Index (ProjectLab)'
+2025-10-21 04:22:21.083 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/ - 200 null text/html; charset=utf-8 195.889ms
+2025-10-21 04:22:21.097 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 04:22:21.099 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_vs/browserLink - null null
+2025-10-21 04:22:21.102 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 5.4571ms
+2025-10-21 04:22:21.125 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.6345ms
