@@ -8,6 +8,7 @@ namespace ProjectLab.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
+
         }
 
         public DbSet<Student> Students { get; set; }
@@ -16,6 +17,8 @@ namespace ProjectLab.Data
         public DbSet<Course> Courses { get; set; }
         public DbSet<StudentCourse> StudentCourses { get; set; }
         public DbSet<InstructorCourse> InstructorCourses { get; set; }
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
